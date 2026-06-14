@@ -1,0 +1,33 @@
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import About from './components/About'
+import Skills from './components/Skills'
+import Timeline from './components/Timeline'
+import Projects from './components/Projects'
+import CaseStudy from './components/CaseStudy'
+import Testimonials from './components/Testimonials'
+import Education from './components/Education'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+
+function App() {
+  return (
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Timeline />
+        <Projects />
+        <CaseStudy />
+        <Testimonials />
+        <Education />
+        <Contact />
+      </main>
+      <Footer />
+    </>
+  )
+}
+
+export default App
