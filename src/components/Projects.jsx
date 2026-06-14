@@ -84,14 +84,14 @@ export default function Projects() {
                       <ExternalLink size={14} /> Live Demo
                     </a>
                   )} */}
-                  {project.links.github && (
+                  {/* {project.links.github && (
                     <a
                       href={project.links.github}
                       className="flex items-center gap-1.5 text-xs text-slate-muted hover:text-neon-cyan transition-colors"
                     >
                       <GithubIcon size={14} /> Source
                     </a>
-                  )}
+                  )} */}
                 </div>
               </div>
             </motion.div>
