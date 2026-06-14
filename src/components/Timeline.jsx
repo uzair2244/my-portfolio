@@ -3,15 +3,16 @@ import SectionHeading from './SectionHeading'
 
 const experiences = [
   {
-    role: 'React Developer',
+    role: 'Frontend Engineer',
     company: 'Preesoft Pvt Ltd',
     period: 'Dec 2024 – Present',
     type: 'Full-time · On-site',
     location: 'Lahore, Pakistan',
     highlights: [
-      'Architecting scalable frontend solutions with React.js for global clients',
-      'Specializing in SaaS development, KPI dashboards, and RBAC implementation',
-      'Collaborating across design, product, and backend teams for production-ready code',
+      'Architecting scalable, component-driven frontend systems with React.js and TypeScript for global SaaS clients',
+      'Building real-time dashboards with live data pipelines, KPI visualizations, and role-based access control (RBAC)',
+      'Developing reusable UI component libraries and design systems to ensure consistency across products',
+      'Collaborating cross-functionally with design, product, and backend teams to ship production-ready features on tight timelines',
     ],
   },
   {

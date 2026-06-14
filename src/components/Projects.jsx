@@ -16,25 +16,47 @@ const projects = [
     title: 'ShortForge',
     desc: 'AI-powered content creation tool that transforms any topic into professional YouTube Shorts or long-form videos with one click — eliminating manual editing bottlenecks.',
     tags: ['AI Integration', 'React', 'Frontend Automation', 'Cloudflare'],
-    links: { live: '#', github: '#' },
+  },
+  {
+    title: 'Binance Futures Scalping Bot',
+    desc: 'High-frequency crypto perpetual futures scalping bot using real-time liquidation heatmap analysis. Features dynamic ATR-based SL/TP, dual-strategy A/B testing, and rigid risk-first architecture with asyncio WebSocket pipelines.',
+    tags: ['Python', 'asyncio', 'WebSocket', 'Binance API', 'Algorithmic Trading'],
   },
   {
     title: 'Nexus',
     desc: 'High-performance automated trading bot built to execute complex, real-time trading strategies across cryptocurrency markets with precision and low latency.',
     tags: ['Node.js', 'Python', 'WebSocket', 'Real-time'],
-    links: { live: '#', github: '#' },
   },
   {
     title: 'Crypto Trading Dashboard',
     desc: 'Real-time analytics and monitoring dashboard for cryptocurrency portfolios, featuring live price feeds, P&L tracking, and strategy backtesting visualizations.',
     tags: ['React', 'Node.js', 'WebSocket', 'Chart.js', 'Python'],
-    links: { live: '#', github: '#' },
+  },
+  {
+    title: 'Product Hunter',
+    desc: 'Lightweight serverless backend for programmatically discovering, tracking, and aggregating product data. Built with async JavaScript, optimized for Vercel Serverless Functions with 85+ automated deployments and 100% uptime.',
+    tags: ['JavaScript', 'Node.js', 'Vercel', 'Serverless', 'Web Scraping'],
+  },
+  {
+    title: 'UAF - Inventory Management System',
+    desc: 'Centralized, decoupled enterprise IMS for streamlining inventory workflows, record-keeping, and administrative tracking. Features a scalable RESTful API backend and a responsive, state-driven client frontend.',
+    tags: ['JavaScript', 'Node.js', 'REST API', 'Full-Stack', 'Mono-repo'],
+  },
+  {
+    title: 'React Document Scanner',
+    desc: 'Zero-dependency React component for real-time document detection and perspective-corrected scanning in the browser. Uses native Canvas API for edge detection, anti-jitter stability filtering, and bilinear warp transformation — no WASM or ML required.',
+    tags: ['React', 'Canvas API', 'WebRTC', 'npm', 'Computer Vision'],
+    links: { live: 'https://document-scanner.vercel.app', npm: 'https://www.npmjs.com/package/@uziee/document-scanner' },
+  },
+  {
+    title: 'Nimble WA Hub',
+    desc: 'Modern, responsive frontend dashboard for WhatsApp business workflow automation. Built with React, TypeScript, and shadcn/ui, featuring a flexible backend decoupling layer and a polished design system with Tailwind CSS.',
+    tags: ['TypeScript', 'React', 'Vite', 'Tailwind CSS', 'shadcn/ui'],
   },
   {
     title: 'Open-Source Packages',
     desc: 'Published reusable npm packages that crossed 1,000+ downloads within days of release, solving common frontend development pain points.',
     tags: ['JavaScript', 'npm', 'Open Source'],
-    links: { github: '#' },
   },
 ]
 
@@ -75,24 +97,30 @@ export default function Projects() {
                   ))}
                 </div>
 
-                <div className="flex gap-4">
-                  {/* {project.links.live && (
-                    <a
-                      href={project.links.live}
-                      className="flex items-center gap-1.5 text-xs text-slate-muted hover:text-neon-cyan transition-colors"
-                    >
-                      <ExternalLink size={14} /> Live Demo
-                    </a>
-                  )} */}
-                  {/* {project.links.github && (
-                    <a
-                      href={project.links.github}
-                      className="flex items-center gap-1.5 text-xs text-slate-muted hover:text-neon-cyan transition-colors"
-                    >
-                      <GithubIcon size={14} /> Source
-                    </a>
-                  )} */}
-                </div>
+                {project.links && (
+                  <div className="flex gap-4">
+                    {project.links.live && (
+                      <a
+                        href={project.links.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1.5 text-xs text-slate-muted hover:text-neon-cyan transition-colors"
+                      >
+                        <ExternalLink size={14} /> Live Demo
+                      </a>
+                    )}
+                    {project.links.npm && (
+                      <a
+                        href={project.links.npm}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1.5 text-xs text-slate-muted hover:text-neon-cyan transition-colors"
+                      >
+                        <ExternalLink size={14} /> npm
+                      </a>
+                    )}
+                  </div>
+                )}
               </div>
             </motion.div>
           ))}

@@ -17,18 +17,18 @@ const categories = [
     skills: [
       { name: 'Node.js', level: 82 },
       { name: 'Cloudflare Workers', level: 78 },
-      { name: 'Python', level: 75 },
+      { name: 'Python / asyncio', level: 88 },
       { name: 'Firebase', level: 80 },
       { name: 'JWT / Auth', level: 85 },
     ],
   },
   {
-    title: 'AI & APIs',
+    title: 'AI, APIs & Data',
     skills: [
       { name: 'AI Model Integration', level: 80 },
       { name: 'Google Maps API', level: 85 },
-      { name: 'Mapbox', level: 78 },
-      { name: 'Socket.io', level: 82 },
+      { name: 'WebSocket / Real-time', level: 88 },
+      { name: 'Binance API', level: 80 },
       { name: 'REST / GraphQL', level: 88 },
     ],
   },
@@ -84,7 +84,7 @@ export default function Skills() {
           className="mt-8 text-center"
         >
           <p className="text-slate-dim text-sm">
-            ...and exploring WebSockets, WebRTC, Three.js, and AI Music Generation on the side
+            ...and exploring WebRTC, Three.js, and AI Music Generation on the side
           </p>
         </motion.div>
       </div>
